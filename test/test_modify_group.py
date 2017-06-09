@@ -16,5 +16,5 @@ def test_modify_group_header(app):
         app.group.create(Group(name="rfrf"))
     app.group.modify_first_group(Group(header="New header"))
     new_groups = app.group.get_group_list()
-    assert len(old_groups)  == len(new_groups)
+    assert len(old_groups) == len(new_groups)
 
